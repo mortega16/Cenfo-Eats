@@ -64,6 +64,12 @@
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedido.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedidoFactory.cs" />
     <Compile Include="BackEnd\MétodoFábrica\IUsuario.cs" />
+    <Compile Include="UI\MenuRestaurantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MenuRestaurantes.Designer.cs">
+      <DependentUpon>MenuRestaurantes.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\pantallaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,9 @@
     <Compile Include="BackEnd\Prototipo\Restaurante.cs" />
     <Compile Include="BackEnd\Prototipo\RestaurantePrototype.cs" />
     <Compile Include="BackEnd\MétodoFábrica\UsuarioFactory.cs" />
+    <EmbeddedResource Include="UI\MenuRestaurantes.resx">
+      <DependentUpon>MenuRestaurantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\pantallaPrincipal.resx">
       <DependentUpon>pantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\estrellas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\PizzaHutLogo.png" />
+    <Content Include="Resources\PizzaHutPizza.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

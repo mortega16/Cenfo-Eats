@@ -1,4 +1,5 @@
 ﻿//using CenfoEats.UI;
+using CenfoEats.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -10,6 +11,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace CenfoEats
 {
@@ -24,7 +26,7 @@ namespace CenfoEats
         private void btnIniciarSesión_Click(object sender, EventArgs e)
         {
             
-            MessageBox.Show("Abrir pantalla de inicio de sesión");
+            //MessageBox.Show("Abrir pantalla de inicio de sesión");//
 
             string nombre = txtBoxNombre.Text;
             string correo = txtBoxCorreo.Text;
@@ -33,6 +35,10 @@ namespace CenfoEats
 
 
             BaseDeDatosSingleton baseDeDatos = BaseDeDatosSingleton.ObtenerInstancia();
+            this.Hide();
+            MenuRestaurantes menuRestaurantes = new MenuRestaurantes();
+
+            menuRestaurantes.Show();
 
             try
             {
