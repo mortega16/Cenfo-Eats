@@ -7,17 +7,23 @@ using System.Threading.Tasks;
 
 namespace CenfoEats
 {
-    public class Restaurante : RestaurantePrototype
+    public class RestaurantePizzaHut : RestaurantePrototype
     {
-        public override object Clone()
+        public RestaurantePizzaHut(int id, string nombre, string direccion, string telefono)
+        {
+            this.Id = id;
+            this.Nombre = nombre;
+            this.Direccion = direccion;
+            this.Telefono = telefono;
+        }
+        public override RestaurantePrototype Clone()
         {
             // Realiza una copia profunda del restaurante
-            return new Restaurante
-            {
+            return new RestaurantePizzaHut(Id = this.Id,
                 Nombre = this.Nombre,
                 Direccion = this.Direccion,
-                Telefono = this.Telefono
-            };
+                Telefono = this.Telefono);
+           
         }
     }
 

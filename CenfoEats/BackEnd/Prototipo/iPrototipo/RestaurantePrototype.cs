@@ -8,10 +8,18 @@ namespace CenfoEats
 {
     public abstract class RestaurantePrototype
     {
+
+        public int Id{ get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
 
-        public abstract object Clone();
+        public  string infoRestaurante()
+        {
+            return $"Nombre: {Nombre},Direccion: {Direccion}, Telefono: {Telefono}"; 
+        }
+
+
+        public abstract RestaurantePrototype Clone();
     }
 }

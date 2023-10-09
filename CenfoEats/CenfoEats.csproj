@@ -59,6 +59,7 @@
     <Compile Include="BackEnd\FábricaAbstracta\pedidoExpressFactory.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevar.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevarFactory.cs" />
+    <Compile Include="BackEnd\Prototipo\Prototipo\RestauranteBurgerKing.cs" />
     <Compile Include="BackEnd\Singleton\BaseDeDatosSingleton.cs" />
     <Compile Include="BackEnd\MétodoFábrica\cliente.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedido.cs" />
@@ -79,8 +80,8 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BackEnd\MétodoFábrica\repartidor.cs" />
-    <Compile Include="BackEnd\Prototipo\Restaurante.cs" />
-    <Compile Include="BackEnd\Prototipo\RestaurantePrototype.cs" />
+    <Compile Include="BackEnd\Prototipo\Prototipo\RestaurantePizzaHut.cs" />
+    <Compile Include="BackEnd\Prototipo\iPrototipo\RestaurantePrototype.cs" />
     <Compile Include="BackEnd\MétodoFábrica\UsuarioFactory.cs" />
     <EmbeddedResource Include="UI\MenuRestaurantes.resx">
       <DependentUpon>MenuRestaurantes.cs</DependentUpon>
