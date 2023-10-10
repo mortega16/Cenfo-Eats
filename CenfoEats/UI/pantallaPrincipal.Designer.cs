@@ -56,7 +56,7 @@
             this.btnIniciarSesión.FlatAppearance.BorderSize = 2;
             this.btnIniciarSesión.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIniciarSesión.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIniciarSesión.Location = new System.Drawing.Point(93, 451);
+            this.btnIniciarSesión.Location = new System.Drawing.Point(92, 453);
             this.btnIniciarSesión.Margin = new System.Windows.Forms.Padding(1);
             this.btnIniciarSesión.Name = "btnIniciarSesión";
             this.btnIniciarSesión.Size = new System.Drawing.Size(246, 64);
@@ -181,7 +181,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(157, 470);
+            this.panel1.Location = new System.Drawing.Point(156, 472);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(195, 56);
             this.panel1.TabIndex = 14;
@@ -200,7 +200,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::CenfoEats.Properties.Resources.delivery_location;
-            this.pictureBox3.Location = new System.Drawing.Point(23, 500);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 521);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(399, 206);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -222,7 +222,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(480, 700);
+            this.ClientSize = new System.Drawing.Size(480, 745);
             this.Controls.Add(this.txtBoxTipo);
             this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblTelefono);

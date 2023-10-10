@@ -71,11 +71,11 @@
     <Compile Include="UI\MenuProductosBk.Designer.cs">
       <DependentUpon>MenuProductosBk.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\MenuProductos.cs">
+    <Compile Include="UI\MenuProductoPh.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\MenuProductos.Designer.cs">
-      <DependentUpon>MenuProductos.cs</DependentUpon>
+    <Compile Include="UI\MenuProductoPh.Designer.cs">
+      <DependentUpon>MenuProductoPh.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\MenuRestaurantes.cs">
       <SubType>Form</SubType>
@@ -95,8 +95,8 @@
     <Compile Include="BackEnd\Prototipo\Prototipo\RestaurantePizzaHut.cs" />
     <Compile Include="BackEnd\Prototipo\iPrototipo\RestaurantePrototype.cs" />
     <Compile Include="BackEnd\MétodoFábrica\UsuarioFactory.cs" />
-    <EmbeddedResource Include="UI\MenuProductos.resx">
-      <DependentUpon>MenuProductos.cs</DependentUpon>
+    <EmbeddedResource Include="UI\MenuProductoPh.resx">
+      <DependentUpon>MenuProductoPh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MenuProductosBk.resx">
       <DependentUpon>MenuProductosBk.cs</DependentUpon>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CenfoEats.UI
 {
-    public partial class MenuProductos : Form
+    public partial class MenuProductoPh : Form
     {
-        public MenuProductos()
+        public MenuProductoPh()
         {
             InitializeComponent();
         }
@@ -43,6 +43,11 @@ namespace CenfoEats.UI
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

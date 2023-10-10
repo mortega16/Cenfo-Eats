@@ -24,7 +24,7 @@ namespace CenfoEats.UI
 
         private void btnIniciarSesión_Click(object sender, EventArgs e)
         {
-            MenuProductos menuProductos = new MenuProductos();
+            MenuProductoPh menuProductos = new MenuProductoPh();
             menuProductos.Show();
         }
 
