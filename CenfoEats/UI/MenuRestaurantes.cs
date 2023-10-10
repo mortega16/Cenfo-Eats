@@ -24,6 +24,7 @@ namespace CenfoEats.UI
 
         private void btnIniciarSesión_Click(object sender, EventArgs e)
         {
+            this.Hide();
             MenuProductoPh menuProductos = new MenuProductoPh();
             menuProductos.Show();
         }
@@ -39,9 +40,16 @@ namespace CenfoEats.UI
         }
 
         private void btnBurgerKing_Click(object sender, EventArgs e)
+
         {
+            this.Hide();
             MenuProductosBk menuProductosBk = new MenuProductosBk();
             menuProductosBk.Show();
+        }
+
+        private void MenuRestaurantes_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

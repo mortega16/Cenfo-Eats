@@ -31,5 +31,10 @@ namespace CenfoEats.UI
         {
 
         }
+
+        private void MenuProductosBk_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
