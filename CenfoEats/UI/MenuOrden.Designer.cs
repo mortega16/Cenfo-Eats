@@ -229,6 +229,7 @@
             this.btnOrdenarBK.TabIndex = 56;
             this.btnOrdenarBK.Text = "Ordernar";
             this.btnOrdenarBK.UseVisualStyleBackColor = true;
+            this.btnOrdenarBK.Click += new System.EventHandler(this.btnOrdenarBK_Click);
             // 
             // panel1
             // 
