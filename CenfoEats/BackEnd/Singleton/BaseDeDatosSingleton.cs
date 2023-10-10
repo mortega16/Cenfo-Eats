@@ -13,7 +13,7 @@ namespace CenfoEats
         private BaseDeDatosSingleton()
         {
             // Configuración de la cadena de conexión a la base de datos SQL Server
-            string cadenaConexion = "Data Source=DESKTOP-53ID2F7;Initial Catalog=CenfoEats;Integrated Security=True";
+            string cadenaConexion = "Data Source=DESKTOP-M8A9P8F;Initial Catalog=CenfoEats;Integrated Security=True";
 
             // Creación de la conexión a la base de datos
             conexion = new SqlConnection(cadenaConexion);  // Inicializar la conexión
