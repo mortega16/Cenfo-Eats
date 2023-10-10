@@ -65,6 +65,18 @@
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedido.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedidoFactory.cs" />
     <Compile Include="BackEnd\MétodoFábrica\IUsuario.cs" />
+    <Compile Include="UI\MenuProductosBk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MenuProductosBk.Designer.cs">
+      <DependentUpon>MenuProductosBk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MenuProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MenuProductos.Designer.cs">
+      <DependentUpon>MenuProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\MenuRestaurantes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <Compile Include="BackEnd\Prototipo\Prototipo\RestaurantePizzaHut.cs" />
     <Compile Include="BackEnd\Prototipo\iPrototipo\RestaurantePrototype.cs" />
     <Compile Include="BackEnd\MétodoFábrica\UsuarioFactory.cs" />
+    <EmbeddedResource Include="UI\MenuProductos.resx">
+      <DependentUpon>MenuProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MenuProductosBk.resx">
+      <DependentUpon>MenuProductosBk.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\MenuRestaurantes.resx">
       <DependentUpon>MenuRestaurantes.cs</DependentUpon>
     </EmbeddedResource>
