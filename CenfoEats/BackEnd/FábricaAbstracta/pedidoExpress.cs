@@ -10,9 +10,10 @@ namespace CenfoEats.BackEnd.FábricaAbstracta
 {
     public class pedidoExpress : ITipoPedido
     {
+        private static string Tipo = "Pedido Express";
         public string ObtenerDescripcion()
         {
-            return "Pedido express";
+            return Tipo;
         }
     }
 }

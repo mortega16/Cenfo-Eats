@@ -42,6 +42,34 @@ namespace CenfoEats.UI
             String mensaje = "Orden realizada exitosamente";
             MessageBox.Show(mensaje);
 
+            string tipoPedido = menuDespegableTipoPedido.Text;
+
+            if (tipoPedido == "Express")
+            {
+                ITipoPedidoFactory tipoPedidoFactory = new BackEnd.FábricaAbstracta.pedidoExpressFactory();
+                ITipoPedido pedidoNuevo = tipoPedidoFactory.CrearPedido();
+                Console.WriteLine(pedidoNuevo.ObtenerDescripcion());
+
+            }
+            else if (tipoPedido == "LLevar")
+            {
+                
+                ITipoPedidoFactory tipoPedidoFactory = new BackEnd.FábricaAbstracta.pedidoParaLlevarFactory();
+                ITipoPedido pedidoNuevo = tipoPedidoFactory.CrearPedido();
+                Console.WriteLine(pedidoNuevo.ObtenerDescripcion());
+
+            }
+
+        }
+
+        private void restaurante_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuDespegableTipoPedido_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
