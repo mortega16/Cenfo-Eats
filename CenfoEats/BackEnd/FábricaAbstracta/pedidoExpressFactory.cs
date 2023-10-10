@@ -23,4 +23,4 @@ namespace CenfoEats.BackEnd.FábricaAbstracta
 //ITipoPedido tipoPedido = tipoPedidoFactory.CrearPedido();
 //Console.WriteLine(tipoPedido.ObtenerDescripcion()); // Pedido express
 
-//Probando cambios 1.0
+//Probando cambios 2.0
