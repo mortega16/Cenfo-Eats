@@ -36,5 +36,12 @@ namespace CenfoEats.UI
         {
 
         }
+
+        private void btnOrdenarBK_Click(object sender, EventArgs e)
+        {
+            String mensaje = "Orden realizada exitosamente";
+            MessageBox.Show(mensaje);
+
+        }
     }
 }
