@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CenfoEats
 {
-    public class UsuarioFactory
+    public class UsuarioFactory : BackEnd.MétodoFábrica.ICreador
     {
         public IUsuario CrearUsuario(string tipoUsuario)
         {

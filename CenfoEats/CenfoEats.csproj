@@ -60,6 +60,8 @@
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevar.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevarFactory.cs" />
     <Compile Include="BackEnd\Gestor\GestorRestaurante.cs" />
+    <Compile Include="BackEnd\Gestor\GestorUsuario.cs" />
+    <Compile Include="BackEnd\MétodoFábrica\ICreador.cs" />
     <Compile Include="BackEnd\Prototipo\Prototipo\RestauranteBurgerKing.cs" />
     <Compile Include="BackEnd\Singleton\BaseDeDatosSingleton.cs" />
     <Compile Include="BackEnd\MétodoFábrica\cliente.cs" />
