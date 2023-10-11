@@ -66,12 +66,20 @@ namespace CenfoEats.UI
         private void LlenarMenu()
         {
             GestorRestaurante gestorBK = new GestorRestaurante(100, 200);
+            GestorRestaurante gestorPH = new GestorRestaurante(300, 400);
             gestorBK.nuevoBurgerKing("Heredia, Santo Domingo", "22221010");
             gestorBK.nuevoBurgerKing("San Jose, Tibas", "22220101");
             gestorBK.nuevoBurgerKing("San Jose, Paseo Colon", "22221515");
             menuDespegableSedeRest.Items.Add(gestorBK.obtenerDatosBK(0));
             menuDespegableSedeRest.Items.Add(gestorBK.obtenerDatosBK(1));
             menuDespegableSedeRest.Items.Add(gestorBK.obtenerDatosBK(2));
+
+            gestorPH.nuevoPizzaHut("Heredia, Santo Domingo", "20201010");
+            gestorPH.nuevoPizzaHut("San Jose, Tibas", "20200101");
+            gestorPH.nuevoPizzaHut("San Jose, Paseo Colon", "20201515");
+            menuDespegableSedeRest.Items.Add(gestorPH.obtenerDatosPH(0));
+            menuDespegableSedeRest.Items.Add(gestorPH.obtenerDatosPH(1));
+            menuDespegableSedeRest.Items.Add(gestorPH.obtenerDatosPH(2)); ;
 
 
         }
