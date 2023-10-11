@@ -1,4 +1,5 @@
 ﻿//using CenfoEats.UI;
+using CenfoEats.BackEnd.Gestor;
 using CenfoEats.UI;
 using System;
 using System.Collections.Generic;
@@ -17,9 +18,13 @@ namespace CenfoEats
 {
     public partial class pantallaPrincipal : Form
     {
+        private GestorUsuario gestorUsuarios;
         public pantallaPrincipal()
         {
             InitializeComponent();
+            // Crear una instancia del Factory y del Gestor
+            var usuarioFactory = new UsuarioFactory();
+            gestorUsuarios = new GestorUsuario(usuarioFactory);
         }
 
 
@@ -57,10 +62,14 @@ namespace CenfoEats
                     if (tipo == "1")
                     {
                         comando.Parameters.AddWithValue("@tipo", "repartidor");
+                        IUsuario nuevoUsuario = gestorUsuarios.CrearUsuario("repartidor");
+                        nuevoUsuario.RealizarAccion();
                     }
                     if(tipo=="2")
                     {
                         comando.Parameters.AddWithValue("@tipo", "cliente");
+                        IUsuario nuevoUsuario = gestorUsuarios.CrearUsuario("cliente");
+                        nuevoUsuario.RealizarAccion();
                     }
 
                     comando.ExecuteNonQuery();
