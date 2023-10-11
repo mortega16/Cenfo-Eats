@@ -55,7 +55,7 @@ namespace CenfoEats.UI
         private void btnOrdernaPH_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuOrden menuOrden = new MenuOrden();
+            MenuOrdenBK menuOrden = new MenuOrdenBK();
             menuOrden.Show();
         }
     }

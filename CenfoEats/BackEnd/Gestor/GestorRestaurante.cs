@@ -19,7 +19,7 @@ namespace CenfoEats.BackEnd.Gestor
         private RestaurantePrototype prototipoPizzaHut;
         private RestaurantePrototype prototipoBurgerKing;
 
-        GestorRestaurante(int pidRestaurantePH, int pidRestauranteBK)
+        public GestorRestaurante(int pidRestaurantePH, int pidRestauranteBK)
         {
             idRestaurantePH = pidRestaurantePH;
             idRestauranteBK = pidRestauranteBK;
@@ -57,10 +57,10 @@ namespace CenfoEats.BackEnd.Gestor
 
         public string obtenerDatosPH()
         {
-            string mensaje = "";
+            string mensaje="";
             foreach (RestaurantePrototype mOb in listaRestaurantesPH)
             {
-                mensaje += obtenerDatosObjeto(mOb) + "\n";
+                mensaje += obtenerDatosObjeto(mOb);
             }
 
             return mensaje; 
@@ -71,7 +71,7 @@ namespace CenfoEats.BackEnd.Gestor
             string mensaje = "";
             foreach (RestaurantePrototype mOb in listaRestaurantesBK)
             {
-                mensaje += obtenerDatosObjeto(mOb) + "\n";
+                mensaje += obtenerDatosObjeto(mOb)+"\n";
             }
 
             return mensaje;

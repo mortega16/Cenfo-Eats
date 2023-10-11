@@ -1,7 +1,10 @@
-﻿namespace CenfoEats.UI
+﻿using CenfoEats.BackEnd.Gestor;
+
+namespace CenfoEats.UI
 {
-    partial class MenuOrden
+    partial class MenuOrdenBK
     {
+        
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -84,17 +87,12 @@
             // menuDespegableSedeRest
             // 
             this.menuDespegableSedeRest.FormattingEnabled = true;
-            this.menuDespegableSedeRest.Items.AddRange(new object[] {
-            "Alajuela",
-            "Heredia",
-            "Cartago",
-            "San Jose"});
-            this.menuDespegableSedeRest.Location = new System.Drawing.Point(120, 160);
-            this.menuDespegableSedeRest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuDespegableSedeRest.Location = new System.Drawing.Point(40, 160);
+            this.menuDespegableSedeRest.Margin = new System.Windows.Forms.Padding(4);
             this.menuDespegableSedeRest.Name = "menuDespegableSedeRest";
-            this.menuDespegableSedeRest.Size = new System.Drawing.Size(185, 24);
+            this.menuDespegableSedeRest.Size = new System.Drawing.Size(333, 24);
             this.menuDespegableSedeRest.TabIndex = 43;
-            this.menuDespegableSedeRest.SelectedIndexChanged += new System.EventHandler(this.restaurante_SelectedIndexChanged);
+            this.menuDespegableSedeRest.SelectedIndexChanged += new System.EventHandler(this.Restaurante_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -217,10 +215,10 @@
             this.menuDespegableTipoPedido.Items.AddRange(new object[] {
             "Express",
             "LLevar"});
-            this.menuDespegableTipoPedido.Location = new System.Drawing.Point(120, 282);
-            this.menuDespegableTipoPedido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuDespegableTipoPedido.Location = new System.Drawing.Point(40, 282);
+            this.menuDespegableTipoPedido.Margin = new System.Windows.Forms.Padding(4);
             this.menuDespegableTipoPedido.Name = "menuDespegableTipoPedido";
-            this.menuDespegableTipoPedido.Size = new System.Drawing.Size(185, 24);
+            this.menuDespegableTipoPedido.Size = new System.Drawing.Size(333, 24);
             this.menuDespegableTipoPedido.TabIndex = 54;
             this.menuDespegableTipoPedido.SelectedIndexChanged += new System.EventHandler(this.menuDespegableTipoPedido_SelectedIndexChanged);
             // 
@@ -272,7 +270,7 @@
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.Título);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuOrden";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

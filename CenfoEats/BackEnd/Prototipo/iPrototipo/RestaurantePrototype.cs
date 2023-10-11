@@ -16,7 +16,7 @@ namespace CenfoEats
 
         public  string infoRestaurante()
         {
-            return $"Nombre: {Nombre},Direccion: {Direccion}, Telefono: {Telefono}"; 
+            return $"{Nombre}  ,{Direccion} , {Telefono} "; 
         }
 
 
