@@ -52,27 +52,15 @@ namespace CenfoEats.UI
 
         private void btnOrdenarBK_Click(object sender, EventArgs e)
         {
-            String mensaje = "Orden realizada exitosamente";
-            MessageBox.Show(mensaje);
-
             string tipoPedido = menuDespegableTipoPedido.Text;
 
-            if (tipoPedido == "Express")
-            {
-                ITipoPedidoFactory tipoPedidoFactory = new BackEnd.FábricaAbstracta.pedidoExpressFactory();
-                ITipoPedido pedidoNuevo = tipoPedidoFactory.CrearPedido();
-                Console.WriteLine(pedidoNuevo.ObtenerDescripcion());
+            GestorPedido gestorPedidos = new GestorPedido();
+            ITipoPedido nuevoPedido = gestorPedidos.CrearPedido(tipoPedido);
 
-            }
-            else if (tipoPedido == "LLevar")
-            {
 
-                ITipoPedidoFactory tipoPedidoFactory = new BackEnd.FábricaAbstracta.pedidoParaLlevarFactory();
-                ITipoPedido pedidoNuevo = tipoPedidoFactory.CrearPedido();
-                Console.WriteLine(pedidoNuevo.ObtenerDescripcion());
+            string mensaje = "Pedido realizado exitosamente";
+            MessageBox.Show(mensaje);
 
-            }
-            
 
         }
         private void LlenarMenu()

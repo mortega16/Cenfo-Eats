@@ -59,6 +59,7 @@
     <Compile Include="BackEnd\FábricaAbstracta\pedidoExpressFactory.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevar.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevarFactory.cs" />
+    <Compile Include="BackEnd\Gestor\GestorPedido.cs" />
     <Compile Include="BackEnd\Gestor\GestorRestaurante.cs" />
     <Compile Include="BackEnd\Gestor\GestorUsuario.cs" />
     <Compile Include="BackEnd\MétodoFábrica\ICreador.cs" />
