@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CenfoEats
+namespace CenfoEats.BackEnd.Estado.abstracto
 {
-    public class cliente : IUsuario
+    public abstract class EstadoPedido
     {
-        public void RealizarAccion()
-        {
-            
-        }
+        public abstract String mostrar();
     }
 }

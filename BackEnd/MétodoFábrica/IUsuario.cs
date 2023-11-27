@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace CenfoEats
 {
-    public class cliente : IUsuario
+    public interface IUsuario
     {
-        public void RealizarAccion()
-        {
-            
-        }
+        void RealizarAccion();
     }
 }

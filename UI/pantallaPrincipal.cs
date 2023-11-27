@@ -1,5 +1,4 @@
 ﻿//using CenfoEats.UI;
-using CenfoEats.BackEnd.Gestor;
 using CenfoEats.UI;
 using System;
 using System.Collections.Generic;
@@ -18,13 +17,9 @@ namespace CenfoEats
 {
     public partial class pantallaPrincipal : Form
     {
-        private GestorUsuario gestorUsuarios;
         public pantallaPrincipal()
         {
             InitializeComponent();
-            // Crear una instancia del Factory y del Gestor
-            var usuarioFactory = new UsuarioFactory();
-            gestorUsuarios = new GestorUsuario(usuarioFactory);
         }
 
 
@@ -42,8 +37,8 @@ namespace CenfoEats
             BaseDeDatosSingleton baseDeDatos = BaseDeDatosSingleton.ObtenerInstancia();
             this.Hide();
             MenuRestaurantes menuRestaurantes = new MenuRestaurantes();
-            MenuRepartidor menuRepartidor = new MenuRepartidor();
-            
+
+            menuRestaurantes.Show();
 
             try
             {
@@ -62,16 +57,10 @@ namespace CenfoEats
                     if (tipo == "1")
                     {
                         comando.Parameters.AddWithValue("@tipo", "repartidor");
-                        IUsuario nuevoUsuario = gestorUsuarios.CrearUsuario("repartidor");
-                        nuevoUsuario.RealizarAccion();
-                        menuRepartidor.Show();
                     }
                     if(tipo=="2")
                     {
                         comando.Parameters.AddWithValue("@tipo", "cliente");
-                        IUsuario nuevoUsuario = gestorUsuarios.CrearUsuario("cliente");
-                        nuevoUsuario.RealizarAccion();
-                        menuRestaurantes.Show();
                     }
 
                     comando.ExecuteNonQuery();

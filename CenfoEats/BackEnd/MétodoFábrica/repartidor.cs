@@ -10,7 +10,6 @@ namespace CenfoEats
     {
         public void RealizarAccion()
         {
-            Console.WriteLine("Repartidor realiza una acción");
         }
     }
 }

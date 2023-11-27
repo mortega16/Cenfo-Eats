@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CenfoEats
 {
-    public class cliente : IUsuario
+    // Interfaz base para tipos de pedidos
+    public interface ITipoPedido
     {
-        public void RealizarAccion()
-        {
-            
-        }
+        string ObtenerDescripcion();
     }
+
 }
+//Producto Abstracto

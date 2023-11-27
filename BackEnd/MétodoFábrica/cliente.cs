@@ -10,7 +10,7 @@ namespace CenfoEats
     {
         public void RealizarAccion()
         {
-            
+            Console.WriteLine("Cliente realiza una acción");
         }
     }
 }

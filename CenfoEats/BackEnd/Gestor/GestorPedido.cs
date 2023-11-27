@@ -15,7 +15,7 @@ namespace CenfoEats.BackEnd.Gestor
             {
                 case "Express":
                     return new pedidoExpress();
-                case "LLevar":
+                case "Llevar":
                     return new pedidoParaLlevar();
                 default:
                     throw new ArgumentException("Tipo de pedido no válido");

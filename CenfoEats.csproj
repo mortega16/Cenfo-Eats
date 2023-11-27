@@ -55,42 +55,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BackEnd\Estado\abstracto\EstadoPedido.cs" />
-    <Compile Include="BackEnd\Estado\concreto\EstadoEnCamino.cs" />
-    <Compile Include="BackEnd\Estado\concreto\EstadoEntregado.cs" />
-    <Compile Include="BackEnd\Estado\concreto\EstadoPendiente.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoExpress.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoExpressFactory.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevar.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\pedidoParaLlevarFactory.cs" />
-    <Compile Include="BackEnd\Gestor\GestorEstado.cs" />
-    <Compile Include="BackEnd\Gestor\GestorPedido.cs" />
     <Compile Include="BackEnd\Gestor\GestorRestaurante.cs" />
-    <Compile Include="BackEnd\Gestor\GestorUsuario.cs" />
-    <Compile Include="BackEnd\MétodoFábrica\ICreador.cs" />
     <Compile Include="BackEnd\Prototipo\Prototipo\RestauranteBurgerKing.cs" />
     <Compile Include="BackEnd\Singleton\BaseDeDatosSingleton.cs" />
     <Compile Include="BackEnd\MétodoFábrica\cliente.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedido.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedidoFactory.cs" />
     <Compile Include="BackEnd\MétodoFábrica\IUsuario.cs" />
-    <Compile Include="UI\EstadoPedido.cs">
+    <Compile Include="UI\MenuOrden.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\EstadoPedido.Designer.cs">
-      <DependentUpon>EstadoPedido.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\MenuOrdenBK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\MenuOrdenBK.designer.cs">
-      <DependentUpon>MenuOrdenBK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\MenuOrdenPH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\MenuOrdenPH.Designer.cs">
-      <DependentUpon>MenuOrdenPH.cs</DependentUpon>
+    <Compile Include="UI\MenuOrden.Designer.cs">
+      <DependentUpon>MenuOrden.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\MenuProductosBk.cs">
       <SubType>Form</SubType>
@@ -104,17 +84,17 @@
     <Compile Include="UI\MenuProductoPh.Designer.cs">
       <DependentUpon>MenuProductoPh.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\MenuRepartidor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\MenuRepartidor.designer.cs">
-      <DependentUpon>MenuRepartidor.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\MenuRestaurantes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\MenuRestaurantes.Designer.cs">
       <DependentUpon>MenuRestaurantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\pantallaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\pantallaPrincipal.Designer.cs">
+      <DependentUpon>pantallaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -122,20 +102,8 @@
     <Compile Include="BackEnd\Prototipo\Prototipo\RestaurantePizzaHut.cs" />
     <Compile Include="BackEnd\Prototipo\iPrototipo\RestaurantePrototype.cs" />
     <Compile Include="BackEnd\MétodoFábrica\UsuarioFactory.cs" />
-    <Compile Include="UI\pantallaPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\pantallaPrincipal.designer.cs">
-      <DependentUpon>pantallaPrincipal.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="UI\EstadoPedido.resx">
-      <DependentUpon>EstadoPedido.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\MenuOrdenBK.resx">
-      <DependentUpon>MenuOrdenBK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\MenuOrdenPH.resx">
-      <DependentUpon>MenuOrdenPH.cs</DependentUpon>
+    <EmbeddedResource Include="UI\MenuOrden.resx">
+      <DependentUpon>MenuOrden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MenuProductoPh.resx">
       <DependentUpon>MenuProductoPh.cs</DependentUpon>
@@ -143,11 +111,11 @@
     <EmbeddedResource Include="UI\MenuProductosBk.resx">
       <DependentUpon>MenuProductosBk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\MenuRepartidor.resx">
-      <DependentUpon>MenuRepartidor.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\MenuRestaurantes.resx">
       <DependentUpon>MenuRestaurantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\pantallaPrincipal.resx">
+      <DependentUpon>pantallaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,9 +127,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UI\pantallaPrincipal.resx">
-      <DependentUpon>pantallaPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

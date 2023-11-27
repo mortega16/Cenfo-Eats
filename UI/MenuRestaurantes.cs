@@ -25,8 +25,8 @@ namespace CenfoEats.UI
         private void btnIniciarSesión_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MenuProductoPh menuProductosPH = new MenuProductoPh();
-            menuProductosPH.Show();
+            MenuProductoPh menuProductos = new MenuProductoPh();
+            menuProductos.Show();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)

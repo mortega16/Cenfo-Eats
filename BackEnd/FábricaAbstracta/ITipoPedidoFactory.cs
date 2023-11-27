@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace CenfoEats
 {
-    public class cliente : IUsuario
+    // Fábrica abstracta para tipos de pedidos
+    public interface ITipoPedidoFactory
     {
-        public void RealizarAccion()
-        {
-            
-        }
+        ITipoPedido CrearPedido();
     }
 }

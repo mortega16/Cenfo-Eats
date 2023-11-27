@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CenfoEats
 {
-    public class cliente : IUsuario
+    public class repartidor : IUsuario
     {
         public void RealizarAccion()
         {
-            
+            Console.WriteLine("Repartidor realiza una acción");
         }
     }
 }
