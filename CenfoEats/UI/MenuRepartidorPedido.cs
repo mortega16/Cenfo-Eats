@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CenfoEats.BackEnd.Gestor;
+using CenfoEats.BackEnd.MétodoFábrica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace CenfoEats.UI
 {
@@ -54,12 +57,28 @@ namespace CenfoEats.UI
             infoCliente.Show();
         }
 
-        private void btnCliente_Click(object sender, EventArgs e)
+        private void btnCliente_Click(object sender, EventArgs e, String tipoUsuario)
         {
-            this.Hide();
-            MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
-            infoCliente.Show();
+            // Validacion de proxy para poder ver informacion sensible del usuario
+
+            if (tipoUsuario == "repartidor")
+            {
+                this.Hide();
+                MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
+                infoCliente.Show();
+            }
+            else
+            {
+                //Pantalla Error
+
+                this.Hide();
+                ErrorForm infoError = new ErrorForm();
+                infoError.Show();
+            }
+
         }
+
+     
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
