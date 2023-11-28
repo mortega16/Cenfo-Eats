@@ -71,5 +71,17 @@ namespace CenfoEats.UI
         {
 
         }
+
+        private void btnOrdenarBK_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuRepartidorPH menuPedido = new MenuRepartidorPH();
+            menuPedido.Show();
+        }
     }
 }
