@@ -66,5 +66,10 @@ namespace CenfoEats.UI
 
 
         }
+
+        private void MenuRepartidor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

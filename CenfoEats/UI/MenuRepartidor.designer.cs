@@ -41,6 +41,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.menuDespegableSedeRestPH = new System.Windows.Forms.ComboBox();
             this.menuDespegableSedeRestBK = new System.Windows.Forms.ComboBox();
+            this.btnOrdenarBK = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -49,10 +51,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::CenfoEats.Properties.Resources.restaurante;
-            this.pictureBox3.Location = new System.Drawing.Point(409, 11);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(307, 9);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 46);
+            this.pictureBox3.Size = new System.Drawing.Size(33, 37);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
@@ -61,9 +63,10 @@
             // 
             this.Título.AutoSize = true;
             this.Título.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Título.Location = new System.Drawing.Point(21, 20);
+            this.Título.Location = new System.Drawing.Point(16, 16);
+            this.Título.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Título.Name = "Título";
-            this.Título.Size = new System.Drawing.Size(133, 29);
+            this.Título.Size = new System.Drawing.Size(105, 24);
             this.Título.TabIndex = 11;
             this.Título.Text = "CenfoEats";
             this.Título.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -73,9 +76,10 @@
             this.Restaurantes.AutoSize = true;
             this.Restaurantes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Restaurantes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Restaurantes.Location = new System.Drawing.Point(39, 80);
+            this.Restaurantes.Location = new System.Drawing.Point(20, 74);
+            this.Restaurantes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Restaurantes.Name = "Restaurantes";
-            this.Restaurantes.Size = new System.Drawing.Size(208, 27);
+            this.Restaurantes.Size = new System.Drawing.Size(172, 22);
             this.Restaurantes.TabIndex = 21;
             this.Restaurantes.Text = "Aceptar pedidos de:";
             // 
@@ -85,10 +89,10 @@
             this.btnBurgerKing.FlatAppearance.BorderSize = 2;
             this.btnBurgerKing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBurgerKing.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBurgerKing.Location = new System.Drawing.Point(26, 419);
+            this.btnBurgerKing.Location = new System.Drawing.Point(20, 287);
             this.btnBurgerKing.Margin = new System.Windows.Forms.Padding(1);
             this.btnBurgerKing.Name = "btnBurgerKing";
-            this.btnBurgerKing.Size = new System.Drawing.Size(141, 46);
+            this.btnBurgerKing.Size = new System.Drawing.Size(106, 37);
             this.btnBurgerKing.TabIndex = 30;
             this.btnBurgerKing.Text = "Burger King";
             this.btnBurgerKing.UseVisualStyleBackColor = true;
@@ -96,10 +100,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel2.Location = new System.Drawing.Point(41, 455);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel2.Location = new System.Drawing.Point(31, 317);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(137, 28);
+            this.panel2.Size = new System.Drawing.Size(103, 23);
             this.panel2.TabIndex = 29;
             // 
             // btnPizzaHut
@@ -108,10 +112,10 @@
             this.btnPizzaHut.FlatAppearance.BorderSize = 2;
             this.btnPizzaHut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPizzaHut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPizzaHut.Location = new System.Drawing.Point(26, 125);
+            this.btnPizzaHut.Location = new System.Drawing.Point(20, 123);
             this.btnPizzaHut.Margin = new System.Windows.Forms.Padding(1);
             this.btnPizzaHut.Name = "btnPizzaHut";
-            this.btnPizzaHut.Size = new System.Drawing.Size(121, 46);
+            this.btnPizzaHut.Size = new System.Drawing.Size(91, 37);
             this.btnPizzaHut.TabIndex = 28;
             this.btnPizzaHut.Text = "Pizza Hut";
             this.btnPizzaHut.UseVisualStyleBackColor = true;
@@ -119,19 +123,19 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(49, 159);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(37, 150);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(107, 28);
+            this.panel1.Size = new System.Drawing.Size(80, 23);
             this.panel1.TabIndex = 27;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(185, 426);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(139, 293);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(79, 46);
+            this.pictureBox5.Size = new System.Drawing.Size(59, 37);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 26;
             this.pictureBox5.TabStop = false;
@@ -140,18 +144,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(37, 578);
+            this.label2.Location = new System.Drawing.Point(32, 429);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 29);
+            this.label2.Size = new System.Drawing.Size(0, 24);
             this.label2.TabIndex = 25;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(162, 125);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(122, 123);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(79, 46);
+            this.pictureBox2.Size = new System.Drawing.Size(59, 37);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
@@ -159,28 +164,51 @@
             // menuDespegableSedeRestPH
             // 
             this.menuDespegableSedeRestPH.FormattingEnabled = true;
-            this.menuDespegableSedeRestPH.Location = new System.Drawing.Point(26, 225);
-            this.menuDespegableSedeRestPH.Margin = new System.Windows.Forms.Padding(4);
+            this.menuDespegableSedeRestPH.Location = new System.Drawing.Point(20, 203);
             this.menuDespegableSedeRestPH.Name = "menuDespegableSedeRestPH";
-            this.menuDespegableSedeRestPH.Size = new System.Drawing.Size(333, 24);
+            this.menuDespegableSedeRestPH.Size = new System.Drawing.Size(251, 21);
             this.menuDespegableSedeRestPH.TabIndex = 62;
             this.menuDespegableSedeRestPH.SelectedIndexChanged += new System.EventHandler(this.menuDespegableSedeRest_SelectedIndexChanged);
             // 
             // menuDespegableSedeRestBK
             // 
             this.menuDespegableSedeRestBK.FormattingEnabled = true;
-            this.menuDespegableSedeRestBK.Location = new System.Drawing.Point(26, 550);
-            this.menuDespegableSedeRestBK.Margin = new System.Windows.Forms.Padding(4);
+            this.menuDespegableSedeRestBK.Location = new System.Drawing.Point(20, 375);
             this.menuDespegableSedeRestBK.Name = "menuDespegableSedeRestBK";
-            this.menuDespegableSedeRestBK.Size = new System.Drawing.Size(333, 24);
+            this.menuDespegableSedeRestBK.Size = new System.Drawing.Size(251, 21);
             this.menuDespegableSedeRestBK.TabIndex = 63;
+            // 
+            // btnOrdenarBK
+            // 
+            this.btnOrdenarBK.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnOrdenarBK.FlatAppearance.BorderSize = 2;
+            this.btnOrdenarBK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrdenarBK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrdenarBK.Location = new System.Drawing.Point(58, 463);
+            this.btnOrdenarBK.Margin = new System.Windows.Forms.Padding(1);
+            this.btnOrdenarBK.Name = "btnOrdenarBK";
+            this.btnOrdenarBK.Size = new System.Drawing.Size(184, 52);
+            this.btnOrdenarBK.TabIndex = 64;
+            this.btnOrdenarBK.Text = "Aceptar";
+            this.btnOrdenarBK.UseVisualStyleBackColor = true;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel3.Location = new System.Drawing.Point(106, 478);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(146, 46);
+            this.panel3.TabIndex = 65;
             // 
             // MenuRepartidor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(462, 698);
+            this.ClientSize = new System.Drawing.Size(346, 567);
+            this.Controls.Add(this.btnOrdenarBK);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.menuDespegableSedeRestBK);
             this.Controls.Add(this.menuDespegableSedeRestPH);
             this.Controls.Add(this.btnBurgerKing);
@@ -195,8 +223,10 @@
             this.Controls.Add(this.Título);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MenuRepartidor";
             this.Text = "MenuRepartidor";
+            this.Load += new System.EventHandler(this.MenuRepartidor_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -219,5 +249,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox menuDespegableSedeRestPH;
         private System.Windows.Forms.ComboBox menuDespegableSedeRestBK;
+        private System.Windows.Forms.Button btnOrdenarBK;
+        private System.Windows.Forms.Panel panel3;
     }
 }
