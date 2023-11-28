@@ -57,10 +57,15 @@ namespace CenfoEats.UI
             infoCliente.Show();
         }
 
-        private void btnCliente_Click(object sender, EventArgs e, String tipoUsuario)
+        private void btnCliente_Click(String tipoUsuario,object sender, EventArgs e)
         {
-            // Validacion de proxy para poder ver informacion sensible del usuario
+            validar(tipoUsuario);
 
+        }
+
+
+        // Funcion para implementacion del proxy
+        private void validar(String tipoUsuario) {
             if (tipoUsuario == "repartidor")
             {
                 this.Hide();
@@ -69,13 +74,12 @@ namespace CenfoEats.UI
             }
             else
             {
-                //Pantalla Error
+                //Pantalla Error en caso de contar con el perfil de colaborador
 
                 this.Hide();
                 ErrorForm infoError = new ErrorForm();
                 infoError.Show();
             }
-
         }
 
      
