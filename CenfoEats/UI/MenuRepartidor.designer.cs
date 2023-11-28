@@ -90,7 +90,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel2.Location = new System.Drawing.Point(31, 317);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(103, 23);
             this.panel2.TabIndex = 29;
@@ -113,7 +113,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.panel1.Location = new System.Drawing.Point(37, 150);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(80, 23);
             this.panel1.TabIndex = 27;
@@ -144,6 +144,7 @@
             this.menuDespegableSedeRestBK.Name = "menuDespegableSedeRestBK";
             this.menuDespegableSedeRestBK.Size = new System.Drawing.Size(251, 21);
             this.menuDespegableSedeRestBK.TabIndex = 63;
+            this.menuDespegableSedeRestBK.SelectedIndexChanged += new System.EventHandler(this.menuDespegableSedeRestBK_SelectedIndexChanged);
             // 
             // panel3
             // 
@@ -224,7 +225,7 @@
             this.Controls.Add(this.Título);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuRepartidor";
             this.Text = "MenuRepartidor";
             this.Load += new System.EventHandler(this.MenuRepartidor_Load);

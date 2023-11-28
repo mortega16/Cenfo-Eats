@@ -19,7 +19,9 @@ namespace CenfoEats.UI
 
         private void btnInfoClienteAtras_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MenuRepartidorPedido infoPedido = new MenuRepartidorPedido();
+            infoPedido.Show();
         }
     }
 }

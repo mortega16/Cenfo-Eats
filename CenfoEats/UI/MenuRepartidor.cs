@@ -79,9 +79,15 @@ namespace CenfoEats.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             this.Hide();
-            MenuRepartidorPH menuPedido = new MenuRepartidorPH();
+            MenuRepartidorPedido menuPedido = new MenuRepartidorPedido();
             menuPedido.Show();
+        }
+
+        private void menuDespegableSedeRestBK_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

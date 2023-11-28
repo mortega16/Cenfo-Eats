@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CenfoEats.UI
 {
-    public partial class MenuRepartidorPH : Form
+    public partial class MenuRepartidorPedido : Form
     {
-        public MenuRepartidorPH()
+        public MenuRepartidorPedido()
         {
             InitializeComponent();
         }
@@ -59,6 +59,11 @@ namespace CenfoEats.UI
             this.Hide();
             MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
             infoCliente.Show();
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
