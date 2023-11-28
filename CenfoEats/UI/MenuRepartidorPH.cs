@@ -41,5 +41,24 @@ namespace CenfoEats.UI
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOrdenarBK_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
+            infoCliente.Show();
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
+            infoCliente.Show();
+        }
     }
 }

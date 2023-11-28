@@ -80,6 +80,12 @@
     <Compile Include="UI\EstadoPedido.Designer.cs">
       <DependentUpon>EstadoPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\MenuRepartidorInfoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MenuRepartidorInfoCliente.Designer.cs">
+      <DependentUpon>MenuRepartidorInfoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\MenuRepartidorPH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     </Compile>
     <EmbeddedResource Include="UI\EstadoPedido.resx">
       <DependentUpon>EstadoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MenuRepartidorInfoCliente.resx">
+      <DependentUpon>MenuRepartidorInfoCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\MenuRepartidorPH.resx">
       <DependentUpon>MenuRepartidorPH.cs</DependentUpon>
