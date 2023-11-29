@@ -17,10 +17,11 @@ namespace CenfoEats.UI
     public partial class MenuRepartidorPedido : Form
     {
         private GestorUsuario gestorUsuarios;
-        public MenuRepartidorPedido(GestorUsuario gestorUsuarios)
+        public MenuRepartidorPedido(GestorUsuario gestorUsuarios, string selectedRestaurante)
         {
             InitializeComponent();
             this.gestorUsuarios = gestorUsuarios;
+            txtRestaurante.Text = selectedRestaurante;
         }
 
         private void Form1_Load(object sender, EventArgs e)

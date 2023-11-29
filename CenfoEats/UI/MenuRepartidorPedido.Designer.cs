@@ -35,7 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.txtRestaurante = new System.Windows.Forms.RichTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnCliente = new System.Windows.Forms.Button();
@@ -119,14 +119,14 @@
             this.richTextBox1.TabIndex = 83;
             this.richTextBox1.Text = "";
             // 
-            // richTextBox2
+            // txtRestaurante
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(42, 204);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(258, 25);
-            this.richTextBox2.TabIndex = 84;
-            this.richTextBox2.Text = "Jalar Nombre Restaurante";
-            this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            this.txtRestaurante.Location = new System.Drawing.Point(42, 204);
+            this.txtRestaurante.Name = "txtRestaurante";
+            this.txtRestaurante.Size = new System.Drawing.Size(258, 25);
+            this.txtRestaurante.TabIndex = 84;
+            this.txtRestaurante.Text = "Jalar Nombre Restaurante";
+            this.txtRestaurante.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // label3
             // 
@@ -177,7 +177,7 @@
             this.ControlBox = false;
             this.Controls.Add(this.btnCliente);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.richTextBox2);
+            this.Controls.Add(this.txtRestaurante);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox txtRestaurante;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnCliente;
     }

@@ -72,26 +72,44 @@ namespace CenfoEats.UI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            IUsuario usuarioActual = gestorUsuarios.ObtenerUsuarioActual();
+            string selectedRestaurante = "";
 
-            if (usuarioActual != null)
+            if (menuDespegableSedeRestBK.SelectedIndex != -1)
             {
-                ProxyUsuario proxyUsuario = new ProxyUsuario(usuarioActual);
+                selectedRestaurante = menuDespegableSedeRestBK.SelectedItem?.ToString();
+            }
+            else if (menuDespegableSedeRestPH.SelectedIndex != -1)
+            {
+                selectedRestaurante = menuDespegableSedeRestPH.SelectedItem?.ToString();
+            }
 
-                if (proxyUsuario.PuedeAccederInfoCliente())
+            if (!string.IsNullOrEmpty(selectedRestaurante))
+            {
+                IUsuario usuarioActual = gestorUsuarios.ObtenerUsuarioActual();
+
+                if (usuarioActual != null)
                 {
-                   
-                    this.Hide();
-                    MenuRepartidorPedido menuPedido = new MenuRepartidorPedido(gestorUsuarios);
-                    menuPedido.Show();
-                }
-                else
-                {
-                   
-                    MessageBox.Show("Error: Su Perfil no cuenta con los permisos suficientes para ver este contenido.");
+                    ProxyUsuario proxyUsuario = new ProxyUsuario(usuarioActual);
+
+                    if (proxyUsuario.PuedeAccederInfoCliente())
+                    {
+                        this.Hide();
+                        MenuRepartidorPedido menuPedido = new MenuRepartidorPedido(gestorUsuarios, selectedRestaurante);
+                        menuPedido.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error: Su Perfil no cuenta con los permisos suficientes para ver este contenido.");
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("Error: Por favor, seleccione un restaurante.");
+            }
         }
+
+
 
         private void menuDespegableSedeRestBK_SelectedIndexChanged(object sender, EventArgs e)
         {
