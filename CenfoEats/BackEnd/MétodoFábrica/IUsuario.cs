@@ -9,5 +9,6 @@ namespace CenfoEats
     public interface IUsuario
     {
         void RealizarAccion();
+        string ObtenerTipo();
     }
 }

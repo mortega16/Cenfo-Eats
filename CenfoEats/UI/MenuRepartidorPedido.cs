@@ -9,15 +9,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CenfoEats.UI;
 
 
 namespace CenfoEats.UI
 {
     public partial class MenuRepartidorPedido : Form
     {
-        public MenuRepartidorPedido()
+        private GestorUsuario gestorUsuarios;
+        public MenuRepartidorPedido(GestorUsuario gestorUsuarios)
         {
             InitializeComponent();
+            this.gestorUsuarios = gestorUsuarios;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -57,36 +60,35 @@ namespace CenfoEats.UI
             infoCliente.Show();
         }
 
-        private void btnCliente_Click(String tipoUsuario,object sender, EventArgs e)
-        {
-            validar(tipoUsuario);
-
-        }
-
-
-        // Funcion para implementacion del proxy
-        private void validar(String tipoUsuario) {
-            if (tipoUsuario == "repartidor")
-            {
-                this.Hide();
-                MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
-                infoCliente.Show();
-            }
-            else
-            {
-                //Pantalla Error en caso de contar con el perfil de colaborador
-
-                this.Hide();
-                ErrorForm infoError = new ErrorForm();
-                infoError.Show();
-            }
-        }
 
      
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCliente_Click(object sender, EventArgs e)
+        {
+            IUsuario usuarioActual = gestorUsuarios.ObtenerUsuarioActual();
+
+            if (usuarioActual != null)
+            {
+                ProxyUsuario proxyUsuario = new ProxyUsuario(usuarioActual);
+
+                if (proxyUsuario.PuedeAccederInfoCliente())
+                {
+                    // User is allowed to access customer information
+                    this.Hide();
+                    MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
+                    infoCliente.Show();
+                }
+                else
+                {
+                    // User is not allowed to access customer information
+                    MessageBox.Show("Error: You do not have permission to access customer information.");
+                }
+            }
         }
     }
 }

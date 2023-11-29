@@ -11,5 +11,10 @@ namespace CenfoEats
         public void RealizarAccion()
         {
         }
+
+        public string ObtenerTipo()
+        {
+            return "repartidor";
+        }
     }
 }

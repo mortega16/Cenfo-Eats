@@ -12,5 +12,9 @@ namespace CenfoEats
         {
             
         }
+        public string ObtenerTipo()
+        {
+            return "cliente";
+        }
     }
 }

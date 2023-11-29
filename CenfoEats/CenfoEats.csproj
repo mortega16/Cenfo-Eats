@@ -69,6 +69,7 @@
     <Compile Include="BackEnd\Gestor\GestorUsuario.cs" />
     <Compile Include="BackEnd\MétodoFábrica\ICreador.cs" />
     <Compile Include="BackEnd\Prototipo\Prototipo\RestauranteBurgerKing.cs" />
+    <Compile Include="BackEnd\Proxy\ProxyUsuario.cs" />
     <Compile Include="BackEnd\Singleton\BaseDeDatosSingleton.cs" />
     <Compile Include="BackEnd\MétodoFábrica\cliente.cs" />
     <Compile Include="BackEnd\FábricaAbstracta\ITipoPedido.cs" />
@@ -222,5 +223,6 @@
     <Content Include="Resources\PizzaHutLogo.png" />
     <Content Include="Resources\PizzaHutPizza.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -42,8 +42,9 @@ namespace CenfoEats
             BaseDeDatosSingleton baseDeDatos = BaseDeDatosSingleton.ObtenerInstancia();
             this.Hide();
             MenuRestaurantes menuRestaurantes = new MenuRestaurantes();
-            MenuRepartidor menuRepartidor = new MenuRepartidor();
-            
+            MenuRepartidor menuRepartidor = new MenuRepartidor(gestorUsuarios);
+
+
 
             try
             {
@@ -63,6 +64,7 @@ namespace CenfoEats
                     {
                         comando.Parameters.AddWithValue("@tipo", "repartidor");
                         IUsuario nuevoUsuario = gestorUsuarios.CrearUsuario("repartidor");
+                        gestorUsuarios.EstablecerUsuarioActual(nuevoUsuario); // linea para luego aplicar el proxy
                         nuevoUsuario.RealizarAccion();
                         menuRepartidor.Show();
                     }
@@ -70,6 +72,7 @@ namespace CenfoEats
                     {
                         comando.Parameters.AddWithValue("@tipo", "cliente");
                         IUsuario nuevoUsuario = gestorUsuarios.CrearUsuario("cliente");
+                        gestorUsuarios.EstablecerUsuarioActual(nuevoUsuario);// linea para luego aplicar el proxy
                         nuevoUsuario.RealizarAccion();
                         menuRestaurantes.Show();
                     }

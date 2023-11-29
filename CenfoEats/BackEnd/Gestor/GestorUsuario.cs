@@ -9,6 +9,7 @@ namespace CenfoEats.BackEnd.Gestor
     public class GestorUsuario
     {
         private UsuarioFactory factory;
+        private IUsuario usuarioActual;
 
         public GestorUsuario(UsuarioFactory factory)
         {
@@ -21,5 +22,15 @@ namespace CenfoEats.BackEnd.Gestor
         }
 
         // Agregar métodos para administrar usuarios si es necesario.
+
+        public void EstablecerUsuarioActual(IUsuario usuario) // Marcar usuario para el proxy
+        {
+            usuarioActual = usuario;
+        }
+        public IUsuario ObtenerUsuarioActual() //  Marcar usuario para el proxy
+        {
+            return usuarioActual;
+        }
+
     }
 }
