@@ -76,16 +76,16 @@ namespace CenfoEats.UI
             {
                 ProxyUsuario proxyUsuario = new ProxyUsuario(usuarioActual);
 
-                if (proxyUsuario.PuedeAccederInfoCliente())
+                if (proxyUsuario.PuedeAccederInfoCliente()) // si tiene el perfil indicado (repartidor) puede ver el contenido, aqui se aplical el proxy
                 {
-                    // User is allowed to access customer information
+                  
                     this.Hide();
                     MenuRepartidorInfoCliente infoCliente = new MenuRepartidorInfoCliente();
                     infoCliente.Show();
                 }
                 else
                 {
-                    // User is not allowed to access customer information
+                  
                     MessageBox.Show("Error: You do not have permission to access customer information.");
                 }
             }
